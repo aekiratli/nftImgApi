@@ -7,9 +7,6 @@ from io import BytesIO
 
 url = "https://supply-fetch.vercel.app/"
 img_ipfs = "https://gateway.pinata.cloud/ipfs/QmcJV2Kvta4ffP54Y3zW58zKYFMzwivEkkyp1rF2vp2pqX/"
-
-file = open('nfts.json', 'r')
-data = json.load(file)
 application = Flask(__name__)
 
 
