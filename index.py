@@ -6,7 +6,7 @@ import requests
 from io import BytesIO
 
 url = "https://supply-fetch.vercel.app/"
-img_ipfs = "https://gateway.pinata.cloud/ipfs/QmdhRvSeaxNkGs62oT5qJW2sDDXLm63S67P4xD4HsKm1oY/"
+img_ipfs = "https://gateway.pinata.cloud/ipfs/QmUVMgp9v8FCKBJJiUE55Noar1VvRMa2PBLZcfjERm13Vp/"
 application = Flask(__name__)
 
 
