@@ -6,7 +6,7 @@ import requests
 from io import BytesIO
 
 url = "https://supply-fetch.vercel.app/"
-img_ipfs = "https://gateway.pinata.cloud/ipfs/QmUVMgp9v8FCKBJJiUE55Noar1VvRMa2PBLZcfjERm13Vp/"
+img_ipfs = "https://gateway.pinata.cloud/ipfs/QmQdrUc7aiFPLLXvwwyxMUCoNRSasNH1ZZPxDkEZ2uLagR/"
 application = Flask(__name__)
 
 
@@ -16,9 +16,6 @@ def get_image(filename):
     token_id = filename.split(".")[0]
 
     supply = requests.get(url).text
-
-    if int(token_id) > (int(supply)-1):
-        abort(404)
 
     image = requests.get(str(img_ipfs+str(token_id)+".png"))
     img = BytesIO(image.content)
